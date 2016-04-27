@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<title>pantalla formulario</title>
+<meta charset="utf-8"/>
+
+<style>
+#padre{
+background-color: #F6E3CE;
+text-align: center;
+width:50%;
+margin-left:25%;
+}
+#tbpadre, td{
+border:* 1px solid black;
+margin-right: auto;
+margin-left: auto;
+}
+#mostrar{
+height: 100px;
+background-color: white;
+border: 1px solid gray;
+border-radius: 5px;
+margin-left: 2%;
+margin-right: 2%;
+}
+#padre{
+border-radius: 5px;
+border: 1px solid gray;
+}
+
+body{
+background-size: 100vw 100vh;
+background-attachment: fixed;
+}
+.vista{
+border: 0.1px solid gray;
+}
+
+</style>
+</head>
+<body background="fondo1.jpg">
+
+<div id="padre"><!--inicio div padre-->
+	<h2>FORMULARIO</h2>
+	
+	
+	<table id="tbpadre"><!--inicio tabla padre-->
+		<tr> <!--inicio de primera fila-->
+			<td><label>Primer nombre</label></td>
+			<td><input type="text"  name="Primer_nombre " id="Primer nombre" size="28"/></td>
+			<td></td>
+			<td>Segundo nombre</td>
+			<td><input type="text" name="Segundo_nombre" id="Segundo_nombre" size="28"/></td>
+		</tr><!--inicio de primera fila-->
+		
+		<tr><!--inicio de segunda fila-->
+			<td><label>Primer apellido</label></td>
+			<td><input type="text" name="Primer_apellido" id="Primer_apellido" size="28"/></td>
+			<td></td>
+			<td>Segundo apellido</td>
+			<td><input type="text" name="Segundo_apellido" id="Segundo_apellido" size="28"/></td>
+		</tr><!--fin de segunda fila-->
+		
+		<tr><!--inicio de tercera fila-->
+			<td><label>Dirección</label></td>
+			<td><input type="text" name="Direccion" id="Direccion" size="28"/></td>
+			<td></td>
+			<td>Fecha de nacimiento</td>
+			<td><input type="text" name="Fecha_de_nacimiento" id="Fecha_de_nacimiento" size="28"/></td>
+		</tr><!--fin de tercera fila-->
+		
+		<tr><!--inicio de cuarta fila-->
+			<td><label>Teléfono casa</label></td>
+			<td><input type="text" name="Tel_casa" id="Tel_casa" size="28"/></td>
+			<td></td>
+			<td><label>Teléfono celular</label></td>
+			<td><input type="text" name="Tel_cel" id="Tel_cel" size="28"/></td>
+		</tr><!--fin de cuarta fila-->
+		
+		<tr><!--inicio de quinta fila-->
+			<td><label>Género</label> </td>
+			<td><select id="cmbGenero" style="width:198px">
+					<option value="" >Seleccione...</option>
+					<option value="M">Masculino</option>
+					<option value="F">Femenino</option>
+				</select></td>
+			<td></td>
+			<td><label>Grupo de adoración</label></td>
+			<td><select id="cmbGrupoAdoracion">
+				<option value="">Seleccione...</option>
+				<option value="1">Amor y fe</option>
+				<option value="2">Aumenta la fe</option>
+				<option value="3">Caminando con Jesús y María</option>
+				<option value="4">Cristo es el camino</option>
+				<option value="5">Dame un nuevo corazón</option>
+				<option value="6">Jesús el buen Pastor</option> 
+				<option value="7">Juan Pablo II</option>
+				<option value="8">Ovejas de Jesús</option>
+				<option value="9">Pescadores</option>	
+				<option value="10">San Francisco de Asis</option>
+				<option value="11">Santa María del camino</option>
+				<option value="12">Santa María madre de Dios</option>
+				<option value="13">Santiago Apóstol</option>
+				<option value="14">Segidores de Cristo</option>
+				<option value="15">Un gran amor</option>
+				<option value="16">Un sólo corazón</option>
+				<option value="17">Viviendo en fe</option> 
+			</select></td>
+		</tr> <!--fin de quinta fila-->
+		
+		<tr><!--inicio de sexta fila-->
+			<td><label>Cargo</label></td>
+			<td><select id="Cargo" style="width:198px">
+			<option value="">Seleccione...</option>	
+			<option value="C">Coordinador</option>
+			<option value="S">Suboordinador</option>
+			</select></td>
+			<td></td>
+			<td><label>Estado</label></td>
+			<td><select id="Cargo"style="width:198px">
+			<option value="">Seleccione...</option>	
+			<option value="1">Activo</option>
+			<option value="0">Inactivo</option>
+			</select></td>
+		</tr><!--fin de sexta fila-->
+		
+		
+		
+		<tr>
+			<td colspan="2" height="20px"></td>
+			<td></td>
+			<td colspan="2"></td>
+		</tr>
+		
+		
+		
+		<tr><!--inicio de septima fila-->
+			<td colspan="2"><label>Aspectos espirituales</label></td>
+			<td></td>
+			<td colspan="2"><label>Ministerio en el que  gustaría servir</label></td>
+		</tr><!--fin de septima fila-->
+		
+		<tr colspan="2"><!--inicio de octavo fila-->
+			<td colspan="2"><table  class="vista" width="300px">
+				<tr>
+					<td class="vista"><input name="cbBautismo" type="checkbox"/>Bautismo</td>
+					<td class="vista"><input name="cbConfirma" type="checkbox"/>Confirma</td>	
+				</tr>
+				<tr>
+					<td class="vista"><input name="cbComunión" type="checkbox"/>Comunión</td>
+					<td class="vista"><input name="cbRetiro" type="checkbox"/>Retiro de inicio</td>
+				</tr>
+				<tr>
+					<td class="vista" colspan="2"><input name="cbCrecimientos" type="checkbox"/>Crecimientos</td>
+				</tr>
+			</table></td>
+		
+			<td></td>
+			
+			<td colspan="2"><table class="vista"  width="325px" >
+				<tr>
+					<td class="vista"><input name="cbBienvenida" type="checkbox"/>Bienvenida</td>
+						<td class="vista"><input name="cbLiturgia" type="checkbox"/>Liturgia</td>
+				</tr>
+				<tr>
+					<td class="vista"><input name="cbCrecimiento" type="checkbox"/>Crecimiento</td>
+					<td class="vista"><input name="cbJóvenes" type="checkbox"/>Jóvenes</td>
+				
+				</tr>
+				<tr>
+					<td  class="vista"><input name="cbMisericordia" type="checkbox"/>Misericordia</td>
+						<td class="vista" ><input name="cbMúsica" type="checkbox"/>Música</td>
+				</tr>
+				<tr>
+					<td class="vista"><input name="cbPredicación" type="checkbox"/>Predicación</td>
+					<td class="vista"><input name="cbNiños" type="checkbox"/>Niños</td>
+					
+				</tr>
+				<tr>
+					<td class="vista" colspan="2"><input name="cbSanación" type="checkbox"/>Sanación</td>
+				</tr>
+				</table>
+			</td>
+			
+		</tr><!--fin de octavo fila-->
+		<tr>
+		<td colspan="5"><h3>Búsqueda</h3></td>
+		</tr>
+		<tr>
+			<td><label>Nombre</label></td>
+			<td colspan="4"><input type="text" size="85px"/></td>
+		</tr>
+	</table> <!--fin tabla padre-->
+	<p>
+	<div id="mostrar">
+		</div>
+		<p>
+	<input type="button" value="Buscar"/>
+	<input type="button" value="Guardar"/>
+	<input type="button" value="Modificar"/>
+	<input type="button" value="Eliminar"/>
+	
+</div><!--fin div padre-->
+
+
+
+</body>
+</html>
